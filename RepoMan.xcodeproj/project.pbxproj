@@ -15,6 +15,8 @@
 		8A4C52C51E1B63C9002EE9C5 /* PackageCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */; };
 		8A4C52C71E1B6D5D002EE9C5 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */; };
 		8A4C52C91E1B7286002EE9C5 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */; };
+		8A4C52CB1E1C2AEA002EE9C5 /* SelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */; };
+		8A4C52CD1E1C2D38002EE9C5 /* HomebrewInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCreation.swift; sourceTree = "<group>"; };
 		8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; };
+		8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomebrewInstaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */,
 				8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */,
 				8A4C529F1E1B6395002EE9C5 /* Main.storyboard */,
+				8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */,
 				8A4C52A21E1B6395002EE9C5 /* Info.plist */,
 				8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */,
 				8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */,
 				8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */,
+				8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */,
 			);
 			path = RepoMan;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				8A4C529A1E1B6395002EE9C5 /* AppDelegate.swift in Sources */,
 				8A4C52C91E1B7286002EE9C5 /* DestinationView.swift in Sources */,
 				8A4C52C51E1B63C9002EE9C5 /* PackageCreation.swift in Sources */,
+				8A4C52CD1E1C2D38002EE9C5 /* HomebrewInstaller.swift in Sources */,
+				8A4C52CB1E1C2AEA002EE9C5 /* SelectionScreen.swift in Sources */,
 				8A4C52C71E1B6D5D002EE9C5 /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

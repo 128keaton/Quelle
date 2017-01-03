@@ -78,6 +78,10 @@ class PackageCreation: NSViewController, DestinationViewDelegate {
     @IBAction func useFolderTitle(sender: NSButton) {
         nameField?.stringValue = self.packageURL.lastPathComponent
     }
+    
+    @IBAction func dismiss(sender: NSButton){
+        self.dismiss(self)
+    }
     func createPackage(folder: String, name: String) {
 
         // edit title
