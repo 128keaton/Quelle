@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A4C529A1E1B6395002EE9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */; };
-		8A4C529E1E1B6395002EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */; };
 		8A4C52A11E1B6395002EE9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C529F1E1B6395002EE9C5 /* Main.storyboard */; };
 		8A4C52AC1E1B6395002EE9C5 /* RepoManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52AB1E1B6395002EE9C5 /* RepoManTests.swift */; };
 		8A4C52B71E1B6395002EE9C5 /* RepoManUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52B61E1B6395002EE9C5 /* RepoManUITests.swift */; };
@@ -17,6 +16,7 @@
 		8A4C52C91E1B7286002EE9C5 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */; };
 		8A4C52CB1E1C2AEA002EE9C5 /* SelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */; };
 		8A4C52CD1E1C2D38002EE9C5 /* HomebrewInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */; };
+		8A4C52CF1E1C65F1002EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C52CE1E1C65F1002EE9C5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		8A4C52961E1B6395002EE9C5 /* Quelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4C52A01E1B6395002EE9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A4C52A21E1B6395002EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4C52A71E1B6395002EE9C5 /* QuelleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuelleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +52,7 @@
 		8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; };
 		8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomebrewInstaller.swift; sourceTree = "<group>"; };
+		8A4C52CE1E1C65F1002EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */,
 				8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */,
 				8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */,
-				8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */,
+				8A4C52CE1E1C65F1002EE9C5 /* Assets.xcassets */,
 				8A4C529F1E1B6395002EE9C5 /* Main.storyboard */,
 				8A4C52A21E1B6395002EE9C5 /* Info.plist */,
 			);
@@ -242,7 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C529E1E1B6395002EE9C5 /* Assets.xcassets in Resources */,
+				8A4C52CF1E1C65F1002EE9C5 /* Assets.xcassets in Resources */,
 				8A4C52A11E1B6395002EE9C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

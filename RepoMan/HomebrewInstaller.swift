@@ -14,6 +14,9 @@ class HomebrewInstaller: NSViewController {
     @IBOutlet var statusLabel: NSTextField?
     @IBOutlet var closeButton: NSButton?
 
+    @IBOutlet var homebrewIcon: NSImageView?
+    @IBOutlet var dpkgIcon: NSImageView?
+    
     override func viewDidLoad() {
         outputView?.string = ""
         outputView?.textColor = NSColor.green
