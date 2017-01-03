@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8A4C529A1E1B6395002EE9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */; };
-		8A4C529C1E1B6395002EE9C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C529B1E1B6395002EE9C5 /* ViewController.swift */; };
 		8A4C529E1E1B6395002EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */; };
 		8A4C52A11E1B6395002EE9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C529F1E1B6395002EE9C5 /* Main.storyboard */; };
 		8A4C52AC1E1B6395002EE9C5 /* RepoManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52AB1E1B6395002EE9C5 /* RepoManTests.swift */; };
 		8A4C52B71E1B6395002EE9C5 /* RepoManUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52B61E1B6395002EE9C5 /* RepoManUITests.swift */; };
+		8A4C52C51E1B63C9002EE9C5 /* PackageCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */; };
+		8A4C52C71E1B6D5D002EE9C5 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */; };
+		8A4C52C91E1B7286002EE9C5 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 /* Begin PBXFileReference section */
 		8A4C52961E1B6395002EE9C5 /* RepoMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A4C529B1E1B6395002EE9C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4C52A01E1B6395002EE9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A4C52A21E1B6395002EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		8A4C52B21E1B6395002EE9C5 /* RepoManUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoManUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C52B61E1B6395002EE9C5 /* RepoManUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoManUITests.swift; sourceTree = "<group>"; };
 		8A4C52B81E1B6395002EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCreation.swift; sourceTree = "<group>"; };
+		8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */,
-				8A4C529B1E1B6395002EE9C5 /* ViewController.swift */,
 				8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */,
 				8A4C529F1E1B6395002EE9C5 /* Main.storyboard */,
 				8A4C52A21E1B6395002EE9C5 /* Info.plist */,
+				8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */,
+				8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */,
+				8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */,
 			);
 			path = RepoMan;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C529C1E1B6395002EE9C5 /* ViewController.swift in Sources */,
 				8A4C529A1E1B6395002EE9C5 /* AppDelegate.swift in Sources */,
+				8A4C52C91E1B7286002EE9C5 /* DestinationView.swift in Sources */,
+				8A4C52C51E1B63C9002EE9C5 /* PackageCreation.swift in Sources */,
+				8A4C52C71E1B6D5D002EE9C5 /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +408,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RepoMan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.RepoMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -413,6 +422,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RepoMan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.RepoMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
