@@ -58,3 +58,12 @@ extension String {
         self = self.capitalizingFirstLetter()
     }
 }
+
+// f the popo
+class UIViewController: NSViewController{
+    override func viewDidAppear() {
+        if self.view.window != nil{
+            self.view.window?.title = self.title!
+        }
+    }
+}

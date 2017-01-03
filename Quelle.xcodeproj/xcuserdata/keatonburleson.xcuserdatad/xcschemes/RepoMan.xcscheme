@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A4C52951E1B6395002EE9C5"
-               BuildableName = "RepoMan.app"
-               BlueprintName = "RepoMan"
-               ReferencedContainer = "container:RepoMan.xcodeproj">
+               BuildableName = "Quelle.app"
+               BlueprintName = "Quelle"
+               ReferencedContainer = "container:Quelle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A4C52A61E1B6395002EE9C5"
-               BuildableName = "RepoManTests.xctest"
-               BlueprintName = "RepoManTests"
-               ReferencedContainer = "container:RepoMan.xcodeproj">
+               BuildableName = "QuelleTests.xctest"
+               BlueprintName = "QuelleTests"
+               ReferencedContainer = "container:Quelle.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A4C52B11E1B6395002EE9C5"
-               BuildableName = "RepoManUITests.xctest"
-               BlueprintName = "RepoManUITests"
-               ReferencedContainer = "container:RepoMan.xcodeproj">
+               BuildableName = "QuelleUITests.xctest"
+               BlueprintName = "QuelleUITests"
+               ReferencedContainer = "container:Quelle.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A4C52951E1B6395002EE9C5"
-            BuildableName = "RepoMan.app"
-            BlueprintName = "RepoMan"
-            ReferencedContainer = "container:RepoMan.xcodeproj">
+            BuildableName = "Quelle.app"
+            BlueprintName = "Quelle"
+            ReferencedContainer = "container:Quelle.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A4C52951E1B6395002EE9C5"
-            BuildableName = "RepoMan.app"
-            BlueprintName = "RepoMan"
-            ReferencedContainer = "container:RepoMan.xcodeproj">
+            BuildableName = "Quelle.app"
+            BlueprintName = "Quelle"
+            ReferencedContainer = "container:Quelle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A4C52951E1B6395002EE9C5"
-            BuildableName = "RepoMan.app"
-            BlueprintName = "RepoMan"
-            ReferencedContainer = "container:RepoMan.xcodeproj">
+            BuildableName = "Quelle.app"
+            BlueprintName = "Quelle"
+            ReferencedContainer = "container:Quelle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

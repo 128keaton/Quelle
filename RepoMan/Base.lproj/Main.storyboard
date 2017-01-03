@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="RepoMan" id="1Xt-HY-uBw">
+                            <menuItem title="Quelle" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="RepoMan" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Quelle" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About RepoMan" id="5kV-Vb-QxS">
+                                        <menuItem title="About Quelle" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide RepoMan" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Quelle" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit RepoMan" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Quelle" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -641,7 +641,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="RepoMan Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Quelle Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -655,7 +655,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RepoMan" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Quelle" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -678,10 +678,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--RepoMan-->
+        <!--Make a selection-->
         <scene sceneID="rWD-Dt-IvF">
             <objects>
-                <viewController title="RepoMan" id="xhf-Ky-nW8" customClass="SelectionScreen" customModule="RepoMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Make a selection" id="xhf-Ky-nW8" customClass="SelectionScreen" customModule="Quelle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="AhZ-C6-iGu">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -737,7 +737,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-DV-sn9">
                                 <rect key="frame" x="152" y="231" width="147" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="RepoMan" id="eIb-at-SOW">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Quelle" id="eIb-at-SOW">
                                     <font key="font" metaFont="system" size="27"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -767,7 +767,7 @@
         <!--Homebrew Installer-->
         <scene sceneID="t5h-Wh-xW4">
             <objects>
-                <viewController id="0Mc-ac-EMn" customClass="HomebrewInstaller" customModule="RepoMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Mc-ac-EMn" customClass="HomebrewInstaller" customModule="Quelle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="CtA-K0-Xde">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -836,16 +836,115 @@
                         <outlet property="closeButton" destination="UMQ-BG-iT0" id="Ne3-Eh-M75"/>
                         <outlet property="outputView" destination="by6-mk-Uqx" id="bFo-zM-zAl"/>
                         <outlet property="statusLabel" destination="xlN-WC-Bg2" id="NjC-zG-a74"/>
+                        <segue destination="gHa-Ei-Upe" kind="modal" identifier="alert" id="Nm2-CA-FXz"/>
                     </connections>
                 </viewController>
                 <customObject id="z58-rD-Pxt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="655" y="1214"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="iVG-eb-xll">
+            <objects>
+                <viewController id="gHa-Ei-Upe" sceneMemberID="viewController">
+                    <view key="view" id="iW9-jS-SKe">
+                        <rect key="frame" x="0.0" y="0.0" width="868" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9v-Lz-E21">
+                                <rect key="frame" x="20" y="86" width="828" height="27"/>
+                                <clipView key="contentView" id="uII-6C-ZsQ">
+                                    <rect key="frame" x="1" y="1" width="811" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" baseWritingDirection="leftToRight" findStyle="panel" continuousSpellChecking="YES" spellingCorrection="YES" id="8bx-CG-2r5">
+                                            <rect key="frame" x="0.0" y="-1" width="811" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" red="0.27032726229257931" green="1" blue="0.31300449267155805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <size key="minSize" width="811" height="25"/>
+                                            <size key="maxSize" width="974" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;">
+                                                    <attributes>
+                                                        <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29804000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="NSColor" red="0.27032726229257931" green="1" blue="0.31300449267155805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="13" name="Monaco"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                        <color key="NSStrokeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="hqe-rY-OAP">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="lLQ-aD-KiH">
+                                    <rect key="frame" x="812" y="1" width="15" height="25"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOE-Nb-4ND">
+                                <rect key="frame" x="280" y="45" width="309" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Paste this into Terminal and follow the instructions" id="1CS-vb-c7u">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ojL-pW-lZy">
+                                <rect key="frame" x="406" y="9" width="57" height="32"/>
+                                <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BwK-bS-jHp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="gHa-Ei-Upe" id="Xes-6L-fb8"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZA-Oj-2D8">
+                                <rect key="frame" x="262" y="140" width="344" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="Bca-kb-5yf"/>
+                                    <constraint firstAttribute="height" constant="31" id="ZZT-xZ-iae"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Homebrew is not installed" id="yV9-Vd-c2F">
+                                    <font key="font" metaFont="system" size="24"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="S9v-Lz-E21" firstAttribute="top" secondItem="KZA-Oj-2D8" secondAttribute="bottom" constant="27" id="0pz-cK-VFj"/>
+                            <constraint firstItem="KZA-Oj-2D8" firstAttribute="centerX" secondItem="S9v-Lz-E21" secondAttribute="centerX" id="BV3-f7-zgr"/>
+                            <constraint firstItem="KZA-Oj-2D8" firstAttribute="top" secondItem="iW9-jS-SKe" secondAttribute="top" constant="29" id="Grb-qh-eOT"/>
+                            <constraint firstItem="ojL-pW-lZy" firstAttribute="top" secondItem="DOE-Nb-4ND" secondAttribute="bottom" constant="8" symbolic="YES" id="RF0-nJ-BjK"/>
+                            <constraint firstItem="S9v-Lz-E21" firstAttribute="leading" secondItem="iW9-jS-SKe" secondAttribute="leading" constant="20" symbolic="YES" id="UCq-UN-k4W"/>
+                            <constraint firstItem="KZA-Oj-2D8" firstAttribute="centerX" secondItem="DOE-Nb-4ND" secondAttribute="centerX" id="acj-Uh-DqW"/>
+                            <constraint firstItem="KZA-Oj-2D8" firstAttribute="centerX" secondItem="iW9-jS-SKe" secondAttribute="centerX" id="eBp-kI-pIb"/>
+                            <constraint firstItem="KZA-Oj-2D8" firstAttribute="centerX" secondItem="ojL-pW-lZy" secondAttribute="centerX" id="gPa-6B-eJQ"/>
+                            <constraint firstItem="S9v-Lz-E21" firstAttribute="centerY" secondItem="iW9-jS-SKe" secondAttribute="centerY" id="mu1-ph-DIj"/>
+                            <constraint firstItem="DOE-Nb-4ND" firstAttribute="top" secondItem="S9v-Lz-E21" secondAttribute="bottom" constant="24" id="xMy-Gz-uYa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="rs9-A1-4MD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="1214"/>
+        </scene>
         <!--Package Creation-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="PackageCreation" customModule="RepoMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="PackageCreation" customModule="Quelle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -861,7 +960,7 @@
                                     <action selector="initiatePackageCreationWithSender:" target="XfG-lQ-9wD" id="dM4-d6-sg8"/>
                                 </connections>
                             </button>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IuV-M9-XTZ" customClass="DestinationView" customModule="RepoMan" customModuleProvider="target">
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IuV-M9-XTZ" customClass="DestinationView" customModule="Quelle" customModuleProvider="target">
                                 <rect key="frame" x="193" y="75" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </customView>

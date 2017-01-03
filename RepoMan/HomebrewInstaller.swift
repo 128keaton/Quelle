@@ -23,15 +23,15 @@ class HomebrewInstaller: NSViewController {
 
 
             DispatchQueue.main.async {
-                if dpkgStatus == false {
+                if dpkgStatus == false && homebrewStatus == true {
                     DispatchQueue.global(qos: .background).async {
                         self.installDPKG()
                     }
                 }
                 if homebrewStatus == false {
-                    DispatchQueue.global(qos: .background).async {
-                        self.installHomebrew()
-                    }
+
+                    self.performSegue(withIdentifier: "alert", sender: self.view)
+
 
                 }
 
@@ -92,39 +92,6 @@ class HomebrewInstaller: NSViewController {
 
     }
 
-    func installHomebrew() {
-        closeButton?.isEnabled = false
-        let task = Process()
-        task.launchPath = "/usr/bin/curl"
-        //"-e \"$(curl -sL https://raw.githubusercontent.com/Homebrew/install/master/install)\"
-        task.arguments = [ "-e", "\"$(/usr/bin/curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""]
-
-        print("Trying to install Homebrew")
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.standardError = pipe
-
-
-        let outHandle = pipe.fileHandleForReading
-        outHandle.waitForDataInBackgroundAndNotify()
-
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(receivedData(notif:)), name: NSNotification.Name.NSFileHandleDataAvailable, object: outHandle)
-
-        // You can also set a function to fire after the task terminates
-        task.terminationHandler = { task -> Void in
-            // Handle the task ending here
-        }
-
-
-
-        task.launch()
-        task.waitUntilExit()
-
-        closeButton?.isEnabled = true
-
-    }
-
 
     func isHomebrewInstalled() -> Bool {
         let task = Process()
@@ -145,7 +112,7 @@ class HomebrewInstaller: NSViewController {
         if ((output?.range(of: "homebrew-core")) != nil) {
             print("Homebrew exists")
             statusLabel?.stringValue = (statusLabel?.stringValue.replacingOccurrences(of: "Homebrew is not installed", with: "Homebrew is installed"))!
-            return false
+            return true
         }
 
         let _ = displayError(title: "Whoops!", text: "Try installing Homebrew first")
@@ -173,7 +140,7 @@ class HomebrewInstaller: NSViewController {
         if ((output?.range(of: "Debian 'dpkg'")) != nil) {
 
             statusLabel?.stringValue = (statusLabel?.stringValue.replacingOccurrences(of: "DPKG is not installed", with: "DPKG is installed"))!
-            return false
+            return true
         }
         print("dpkg doesn't exist :(")
         let _ = displayError(title: "Whoops!", text: "Try installing Homebrew first")

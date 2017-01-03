@@ -8,6 +8,6 @@
 
 import Foundation
 import Cocoa
-class SelectionScreen: NSViewController {
-    
+class SelectionScreen: UIViewController {
+  
 }

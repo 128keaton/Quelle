@@ -37,15 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A4C52961E1B6395002EE9C5 /* RepoMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4C52961E1B6395002EE9C5 /* Quelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4C52A01E1B6395002EE9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A4C52A21E1B6395002EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A4C52A71E1B6395002EE9C5 /* RepoManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoManTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4C52A71E1B6395002EE9C5 /* QuelleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuelleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C52AB1E1B6395002EE9C5 /* RepoManTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoManTests.swift; sourceTree = "<group>"; };
 		8A4C52AD1E1B6395002EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A4C52B21E1B6395002EE9C5 /* RepoManUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoManUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4C52B21E1B6395002EE9C5 /* QuelleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuelleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C52B61E1B6395002EE9C5 /* RepoManUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoManUITests.swift; sourceTree = "<group>"; };
 		8A4C52B81E1B6395002EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCreation.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		8A4C528D1E1B6395002EE9C5 = {
 			isa = PBXGroup;
 			children = (
-				8A4C52981E1B6395002EE9C5 /* RepoMan */,
+				8A4C52981E1B6395002EE9C5 /* Quelle */,
 				8A4C52AA1E1B6395002EE9C5 /* RepoManTests */,
 				8A4C52B51E1B6395002EE9C5 /* RepoManUITests */,
 				8A4C52971E1B6395002EE9C5 /* Products */,
@@ -93,26 +93,27 @@
 		8A4C52971E1B6395002EE9C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A4C52961E1B6395002EE9C5 /* RepoMan.app */,
-				8A4C52A71E1B6395002EE9C5 /* RepoManTests.xctest */,
-				8A4C52B21E1B6395002EE9C5 /* RepoManUITests.xctest */,
+				8A4C52961E1B6395002EE9C5 /* Quelle.app */,
+				8A4C52A71E1B6395002EE9C5 /* QuelleTests.xctest */,
+				8A4C52B21E1B6395002EE9C5 /* QuelleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A4C52981E1B6395002EE9C5 /* RepoMan */ = {
+		8A4C52981E1B6395002EE9C5 /* Quelle */ = {
 			isa = PBXGroup;
 			children = (
 				8A4C52991E1B6395002EE9C5 /* AppDelegate.swift */,
-				8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */,
-				8A4C529F1E1B6395002EE9C5 /* Main.storyboard */,
 				8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */,
-				8A4C52A21E1B6395002EE9C5 /* Info.plist */,
 				8A4C52C81E1B7286002EE9C5 /* DestinationView.swift */,
 				8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */,
 				8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */,
 				8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */,
+				8A4C529D1E1B6395002EE9C5 /* Assets.xcassets */,
+				8A4C529F1E1B6395002EE9C5 /* Main.storyboard */,
+				8A4C52A21E1B6395002EE9C5 /* Info.plist */,
 			);
+			name = Quelle;
 			path = RepoMan;
 			sourceTree = "<group>";
 		};
@@ -137,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A4C52951E1B6395002EE9C5 /* RepoMan */ = {
+		8A4C52951E1B6395002EE9C5 /* Quelle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A4C52BB1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "RepoMan" */;
+			buildConfigurationList = 8A4C52BB1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "Quelle" */;
 			buildPhases = (
 				8A4C52921E1B6395002EE9C5 /* Sources */,
 				8A4C52931E1B6395002EE9C5 /* Frameworks */,
@@ -149,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = RepoMan;
+			name = Quelle;
 			productName = RepoMan;
-			productReference = 8A4C52961E1B6395002EE9C5 /* RepoMan.app */;
+			productReference = 8A4C52961E1B6395002EE9C5 /* Quelle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8A4C52A61E1B6395002EE9C5 /* RepoManTests */ = {
+		8A4C52A61E1B6395002EE9C5 /* QuelleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A4C52BE1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "RepoManTests" */;
+			buildConfigurationList = 8A4C52BE1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "QuelleTests" */;
 			buildPhases = (
 				8A4C52A31E1B6395002EE9C5 /* Sources */,
 				8A4C52A41E1B6395002EE9C5 /* Frameworks */,
@@ -167,14 +168,14 @@
 			dependencies = (
 				8A4C52A91E1B6395002EE9C5 /* PBXTargetDependency */,
 			);
-			name = RepoManTests;
+			name = QuelleTests;
 			productName = RepoManTests;
-			productReference = 8A4C52A71E1B6395002EE9C5 /* RepoManTests.xctest */;
+			productReference = 8A4C52A71E1B6395002EE9C5 /* QuelleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8A4C52B11E1B6395002EE9C5 /* RepoManUITests */ = {
+		8A4C52B11E1B6395002EE9C5 /* QuelleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A4C52C11E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "RepoManUITests" */;
+			buildConfigurationList = 8A4C52C11E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "QuelleUITests" */;
 			buildPhases = (
 				8A4C52AE1E1B6395002EE9C5 /* Sources */,
 				8A4C52AF1E1B6395002EE9C5 /* Frameworks */,
@@ -185,9 +186,9 @@
 			dependencies = (
 				8A4C52B41E1B6395002EE9C5 /* PBXTargetDependency */,
 			);
-			name = RepoManUITests;
+			name = QuelleUITests;
 			productName = RepoManUITests;
-			productReference = 8A4C52B21E1B6395002EE9C5 /* RepoManUITests.xctest */;
+			productReference = 8A4C52B21E1B6395002EE9C5 /* QuelleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8A4C52911E1B6395002EE9C5 /* Build configuration list for PBXProject "RepoMan" */;
+			buildConfigurationList = 8A4C52911E1B6395002EE9C5 /* Build configuration list for PBXProject "Quelle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +230,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A4C52951E1B6395002EE9C5 /* RepoMan */,
-				8A4C52A61E1B6395002EE9C5 /* RepoManTests */,
-				8A4C52B11E1B6395002EE9C5 /* RepoManUITests */,
+				8A4C52951E1B6395002EE9C5 /* Quelle */,
+				8A4C52A61E1B6395002EE9C5 /* QuelleTests */,
+				8A4C52B11E1B6395002EE9C5 /* QuelleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		8A4C52A91E1B6395002EE9C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8A4C52951E1B6395002EE9C5 /* RepoMan */;
+			target = 8A4C52951E1B6395002EE9C5 /* Quelle */;
 			targetProxy = 8A4C52A81E1B6395002EE9C5 /* PBXContainerItemProxy */;
 		};
 		8A4C52B41E1B6395002EE9C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8A4C52951E1B6395002EE9C5 /* RepoMan */;
+			target = 8A4C52951E1B6395002EE9C5 /* Quelle */;
 			targetProxy = 8A4C52B31E1B6395002EE9C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,7 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.RepoManTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoMan.app/Contents/MacOS/RepoMan";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quelle.app/Contents/MacOS/Quelle";
 			};
 			name = Debug;
 		};
@@ -463,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.RepoManTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoMan.app/Contents/MacOS/RepoMan";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quelle.app/Contents/MacOS/Quelle";
 			};
 			name = Release;
 		};
@@ -498,7 +499,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A4C52911E1B6395002EE9C5 /* Build configuration list for PBXProject "RepoMan" */ = {
+		8A4C52911E1B6395002EE9C5 /* Build configuration list for PBXProject "Quelle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A4C52B91E1B6395002EE9C5 /* Debug */,
@@ -507,7 +508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A4C52BB1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "RepoMan" */ = {
+		8A4C52BB1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "Quelle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A4C52BC1E1B6395002EE9C5 /* Debug */,
@@ -515,7 +516,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		8A4C52BE1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "RepoManTests" */ = {
+		8A4C52BE1E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "QuelleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A4C52BF1E1B6395002EE9C5 /* Debug */,
@@ -523,7 +524,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		8A4C52C11E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "RepoManUITests" */ = {
+		8A4C52C11E1B6395002EE9C5 /* Build configuration list for PBXNativeTarget "QuelleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A4C52C21E1B6395002EE9C5 /* Debug */,

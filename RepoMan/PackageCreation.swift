@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class PackageCreation: NSViewController, DestinationViewDelegate {
+class PackageCreation: UIViewController, DestinationViewDelegate {
     @IBOutlet var destinationView: DestinationView!
     @IBOutlet var folderTitleButton: NSButton?
     @IBOutlet var createButton: NSButton?
