@@ -56,7 +56,7 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
         return false
 
     }
-    func processFolderURL(path: String) {
+    func process(path: String) {
         self.packageURL = URL(string: path)
         self.packagePath = path
         folderTitleButton?.isEnabled = true
@@ -119,9 +119,14 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
         }
 
 
+        var outputFolder = ""
+        if let localPath = UserDefaults.standard.object(forKey: "localDeb"){
+            outputFolder = (localPath as! String).replacingOccurrences(of: "file://", with: "")
+            print(outputFolder)
+        }
         let task = Process()
         task.launchPath = "/usr/local/bin/dpkg-deb"
-        task.arguments = ["-Zgzip", "-b", folder]
+        task.arguments = ["-Zgzip", "-b", folder, outputFolder]
 
 
         let pipe = Pipe()

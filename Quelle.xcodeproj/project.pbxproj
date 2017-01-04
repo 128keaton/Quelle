@@ -17,6 +17,8 @@
 		8A4C52CB1E1C2AEA002EE9C5 /* SelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */; };
 		8A4C52CD1E1C2D38002EE9C5 /* HomebrewInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */; };
 		8A4C52CF1E1C65F1002EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C52CE1E1C65F1002EE9C5 /* Assets.xcassets */; };
+		8A4C52D11E1C976F002EE9C5 /* RepositoryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52D01E1C976F002EE9C5 /* RepositoryManagement.swift */; };
+		8A4C52D31E1CB902002EE9C5 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C52D21E1CB902002EE9C5 /* PreferencesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; };
 		8A4C52CC1E1C2D38002EE9C5 /* HomebrewInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomebrewInstaller.swift; sourceTree = "<group>"; };
 		8A4C52CE1E1C65F1002EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A4C52D01E1C976F002EE9C5 /* RepositoryManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryManagement.swift; sourceTree = "<group>"; };
+		8A4C52D21E1CB902002EE9C5 /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				8A4C52981E1B6395002EE9C5 /* Quelle */,
-				8A4C52AA1E1B6395002EE9C5 /* RepoManTests */,
-				8A4C52B51E1B6395002EE9C5 /* RepoManUITests */,
+				8A4C52AA1E1B6395002EE9C5 /* QuelleTests */,
+				8A4C52B51E1B6395002EE9C5 /* QuelleUITests */,
 				8A4C52971E1B6395002EE9C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +113,8 @@
 				8A4C52C41E1B63C9002EE9C5 /* PackageCreation.swift */,
 				8A4C52C61E1B6D5D002EE9C5 /* GlobalFunctions.swift */,
 				8A4C52CA1E1C2AEA002EE9C5 /* SelectionScreen.swift */,
+				8A4C52D01E1C976F002EE9C5 /* RepositoryManagement.swift */,
+				8A4C52D21E1CB902002EE9C5 /* PreferencesController.swift */,
 				8A4C52CE1E1C65F1002EE9C5 /* Assets.xcassets */,
 				8A4C529F1E1B6395002EE9C5 /* Main.storyboard */,
 				8A4C52A21E1B6395002EE9C5 /* Info.plist */,
@@ -117,21 +123,23 @@
 			path = RepoMan;
 			sourceTree = "<group>";
 		};
-		8A4C52AA1E1B6395002EE9C5 /* RepoManTests */ = {
+		8A4C52AA1E1B6395002EE9C5 /* QuelleTests */ = {
 			isa = PBXGroup;
 			children = (
 				8A4C52AB1E1B6395002EE9C5 /* RepoManTests.swift */,
 				8A4C52AD1E1B6395002EE9C5 /* Info.plist */,
 			);
+			name = QuelleTests;
 			path = RepoManTests;
 			sourceTree = "<group>";
 		};
-		8A4C52B51E1B6395002EE9C5 /* RepoManUITests */ = {
+		8A4C52B51E1B6395002EE9C5 /* QuelleUITests */ = {
 			isa = PBXGroup;
 			children = (
 				8A4C52B61E1B6395002EE9C5 /* RepoManUITests.swift */,
 				8A4C52B81E1B6395002EE9C5 /* Info.plist */,
 			);
+			name = QuelleUITests;
 			path = RepoManUITests;
 			sourceTree = "<group>";
 		};
@@ -272,7 +280,9 @@
 				8A4C52C91E1B7286002EE9C5 /* DestinationView.swift in Sources */,
 				8A4C52C51E1B63C9002EE9C5 /* PackageCreation.swift in Sources */,
 				8A4C52CD1E1C2D38002EE9C5 /* HomebrewInstaller.swift in Sources */,
+				8A4C52D31E1CB902002EE9C5 /* PreferencesController.swift in Sources */,
 				8A4C52CB1E1C2AEA002EE9C5 /* SelectionScreen.swift in Sources */,
+				8A4C52D11E1C976F002EE9C5 /* RepositoryManagement.swift in Sources */,
 				8A4C52C71E1B6D5D002EE9C5 /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

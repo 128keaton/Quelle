@@ -57,6 +57,9 @@ extension String {
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }
+    mutating func cleanPath(){
+        self = self.replacingOccurrences(of: "file://", with: "").replacingOccurrences(of: NSHomeDirectory(), with: "~")
+    }
 }
 
 // f the popo
