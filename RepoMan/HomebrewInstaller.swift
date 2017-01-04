@@ -31,13 +31,7 @@ class HomebrewInstaller: NSViewController {
                         self.installDPKG()
                     }
                 }
-                if homebrewStatus == false {
-
-                    self.performSegue(withIdentifier: "alert", sender: self.view)
-
-
-                }
-
+              
             }
 
         }
@@ -45,6 +39,11 @@ class HomebrewInstaller: NSViewController {
 
     }
 
+    @IBAction func manuallyInstallDPKG(sender: NSButton){
+        DispatchQueue.global(qos: .background).async {
+            self.installDPKG()
+        }
+    }
     func installDPKG() {
         closeButton?.isEnabled = false
         let task = Process()
@@ -142,7 +141,7 @@ class HomebrewInstaller: NSViewController {
 
         if ((output?.range(of: "Debian 'dpkg'")) != nil) {
 
-            statusLabel?.stringValue = (statusLabel?.stringValue.replacingOccurrences(of: "DPKG is not installed", with: "DPKG is installed"))!
+            statusLabel?.stringValue = (statusLabel?.stringValue.replacingOccurrences(of: "dpkg is not installed", with: "dpkg is installed"))!
             return true
         }
         print("dpkg doesn't exist :(")
