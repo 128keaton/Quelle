@@ -13,21 +13,20 @@
             <objects>
                 <viewController title="About" id="t8E-TF-M0N" sceneMemberID="viewController">
                     <view key="view" id="wPn-Nm-hEt">
-                        <rect key="frame" x="0.0" y="0.0" width="231" height="420"/>
+                        <rect key="frame" x="0.0" y="0.0" width="231" height="264"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tXq-rr-zzO">
-                                <rect key="frame" x="61" y="292" width="108" height="108"/>
+                                <rect key="frame" x="61" y="136" width="108" height="108"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="108" id="ZYW-yp-8LG"/>
+                                    <constraint firstAttribute="height" constant="108" id="FZg-3m-YwM"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon" id="pYr-ox-c8P"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-f5-Z8H">
-                                <rect key="frame" x="42" y="205" width="147" height="49"/>
+                                <rect key="frame" x="42" y="79" width="147" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="m21-G1-fHf"/>
-                                    <constraint firstAttribute="height" constant="49" id="to7-EL-exG"/>
+                                    <constraint firstAttribute="height" constant="49" id="GYo-Jt-Oj7"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Quelle" id="jb1-Tc-r5j">
                                     <font key="font" metaFont="systemThin" size="33"/>
@@ -36,60 +35,54 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCl-9u-pAe">
-                                <rect key="frame" x="97" y="180" width="37" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="alpha" id="nUE-Zo-1P6">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z58-EU-Wik">
-                                <rect key="frame" x="9" y="20" width="204" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright 2016, Keaton Burleson" id="a08-zP-La1">
+                                <rect key="frame" x="76" y="54" width="79" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="eeG-00-rkc"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 0.1.1" id="nUE-Zo-1P6">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCC-y5-i54">
-                                <rect key="frame" x="48" y="94" width="134" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="http://128keaton.com" id="S0o-xK-p5N">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <rect key="frame" x="12" y="20" width="206" height="16"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright (c) 2016 Keaton Burleson" id="S0o-xK-p5N">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="centerX" secondItem="NCC-y5-i54" secondAttribute="centerX" id="1a6-eo-aII"/>
-                            <constraint firstAttribute="trailing" secondItem="z58-EU-Wik" secondAttribute="trailing" constant="20" symbolic="YES" id="5Ma-yK-syl"/>
-                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="top" secondItem="tXq-rr-zzO" secondAttribute="bottom" constant="38" id="8gS-XU-LXX"/>
-                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="centerX" secondItem="wPn-Nm-hEt" secondAttribute="centerX" id="OQM-q1-mPI"/>
-                            <constraint firstItem="tXq-rr-zzO" firstAttribute="centerX" secondItem="0g5-f5-Z8H" secondAttribute="centerX" id="cmT-Ub-uuZ"/>
-                            <constraint firstItem="z58-EU-Wik" firstAttribute="top" secondItem="NCC-y5-i54" secondAttribute="bottom" constant="57" id="imK-NB-ysA"/>
-                            <constraint firstItem="tXq-rr-zzO" firstAttribute="top" secondItem="wPn-Nm-hEt" secondAttribute="top" constant="20" symbolic="YES" id="mIg-Du-VpH"/>
-                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="top" secondItem="wPn-Nm-hEt" secondAttribute="top" constant="166" id="s6y-uw-njZ"/>
-                            <constraint firstItem="qCl-9u-pAe" firstAttribute="top" secondItem="0g5-f5-Z8H" secondAttribute="bottom" constant="8" symbolic="YES" id="sec-jy-VeN"/>
-                            <constraint firstItem="NCC-y5-i54" firstAttribute="top" secondItem="qCl-9u-pAe" secondAttribute="bottom" constant="69" id="utY-4H-EXR"/>
-                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="centerX" secondItem="qCl-9u-pAe" secondAttribute="centerX" id="xus-if-npP"/>
+                            <constraint firstItem="tXq-rr-zzO" firstAttribute="centerX" secondItem="0g5-f5-Z8H" secondAttribute="centerX" id="9DA-lb-UmP"/>
+                            <constraint firstItem="tXq-rr-zzO" firstAttribute="top" secondItem="wPn-Nm-hEt" secondAttribute="top" constant="20" symbolic="YES" id="MgH-g4-i5U"/>
+                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="centerX" secondItem="qCl-9u-pAe" secondAttribute="centerX" id="Muu-PR-OtU"/>
+                            <constraint firstAttribute="bottom" secondItem="NCC-y5-i54" secondAttribute="bottom" constant="20" symbolic="YES" id="OnO-IO-jRf"/>
+                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="top" secondItem="tXq-rr-zzO" secondAttribute="bottom" constant="8" symbolic="YES" id="VWU-fz-KTN"/>
+                            <constraint firstItem="0g5-f5-Z8H" firstAttribute="leading" secondItem="wPn-Nm-hEt" secondAttribute="leading" constant="44" id="grD-30-4xe"/>
+                            <constraint firstItem="tXq-rr-zzO" firstAttribute="leading" secondItem="wPn-Nm-hEt" secondAttribute="leading" constant="61" id="hRJ-UP-2Ut"/>
+                            <constraint firstItem="qCl-9u-pAe" firstAttribute="top" secondItem="0g5-f5-Z8H" secondAttribute="bottom" constant="8" symbolic="YES" id="kVB-b2-DAz"/>
+                            <constraint firstItem="qCl-9u-pAe" firstAttribute="leading" secondItem="wPn-Nm-hEt" secondAttribute="leading" constant="78" id="mfl-WA-8Lz"/>
+                            <constraint firstItem="qCl-9u-pAe" firstAttribute="centerX" secondItem="NCC-y5-i54" secondAttribute="centerX" id="o7C-Cq-0TY"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="ac9-iY-Nt0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="-240"/>
+            <point key="canvasLocation" x="921" y="-240"/>
         </scene>
         <!--About Window-->
         <scene sceneID="ZEJ-fB-BjY">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="XeF-5a-0az" userLabel="About Window" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="XeF-5a-0az" userLabel="About Window" customClass="External" customModule="Quelle" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="IC3-gL-q95">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="363" width="231" height="420"/>
+                        <rect key="contentRect" x="294" y="363" width="231" height="264"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
-                        <value key="minSize" type="size" width="231" height="420"/>
-                        <value key="maxSize" type="size" width="231" height="420"/>
+                        <value key="minSize" type="size" width="231" height="264"/>
+                        <value key="maxSize" type="size" width="231" height="264"/>
                     </window>
                     <connections>
                         <segue destination="t8E-TF-M0N" kind="relationship" relationship="window.shadowedContentViewController" id="XTn-Tz-1qa"/>
@@ -97,7 +90,7 @@
                 </windowController>
                 <customObject id="bdO-Hk-8Hp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="-240"/>
+            <point key="canvasLocation" x="170" y="-209"/>
         </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
@@ -113,13 +106,13 @@
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
-                                                <segue destination="XeF-5a-0az" kind="modal" id="RmT-kw-CXU"/>
+                                                <segue destination="XeF-5a-0az" kind="show" id="RmT-kw-CXU"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
-                                                <segue destination="veB-bs-lSb" kind="modal" id="y5U-aY-Hy0"/>
+                                                <segue destination="o1y-QU-B45" kind="show" id="MXf-jW-Xwf"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -231,9 +224,9 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="Core" customModule="Quelle" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Make a selection" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="210"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -248,6 +241,24 @@
             </objects>
             <point key="canvasLocation" x="74" y="259"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="Y7w-vw-ruo">
+            <objects>
+                <windowController id="o1y-QU-B45" customClass="External" customModule="Quelle" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="e55-4r-XZb">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="363" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+                    </window>
+                    <connections>
+                        <segue destination="veB-bs-lSb" kind="relationship" relationship="window.shadowedContentViewController" id="89W-Hk-YgX"/>
+                    </connections>
+                </windowController>
+                <customObject id="5Cg-ie-toi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="325"/>
+        </scene>
         <!--Preferences-->
         <scene sceneID="4HX-je-oxv">
             <objects>
@@ -259,7 +270,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC2-SU-QZP">
                                 <rect key="frame" x="181" y="61" width="166" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="/Users/steve/Repository" bezelStyle="round" id="meb-cV-w26">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="/Users/steve/Repository" drawsBackground="YES" id="meb-cV-w26">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -288,7 +299,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOe-nI-Rni">
                                 <rect key="frame" x="181" y="31" width="166" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="/Users/steve/Repository" bezelStyle="round" id="7J7-qa-lxY">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="/Users/steve/Repository" drawsBackground="YES" id="7J7-qa-lxY">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -323,7 +334,7 @@
                 </viewController>
                 <customObject id="lVn-Zy-coS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488" y="693"/>
+            <point key="canvasLocation" x="-650" y="693"/>
         </scene>
         <!--Make a selection-->
         <scene sceneID="rWD-Dt-IvF">
@@ -347,17 +358,6 @@
                                     <segue destination="0Mc-ac-EMn" kind="sheet" id="VIe-PF-dcO"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-DV-sn9">
-                                <rect key="frame" x="152" y="141" width="147" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="TYl-6x-F2G"/>
-                                </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Quelle" id="eIb-at-SOW">
-                                    <font key="font" metaFont="systemThin" size="33"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TwP-Sj-HwO">
                                 <rect key="frame" x="20" y="87" width="195" height="56"/>
                                 <constraints>
@@ -368,7 +368,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="XfG-lQ-9wD" kind="modal" identifier="makePackage" id="F6e-vl-mPg"/>
+                                    <segue destination="XfG-lQ-9wD" kind="sheet" identifier="makePackage" id="F6e-vl-mPg"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QsT-fZ-twJ">
@@ -386,12 +386,26 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-1d-R2Y">
-                                <rect key="frame" x="234" y="26" width="195" height="56"/>
-                                <buttonCell key="cell" type="squareTextured" title="Blank" bezelStyle="texturedSquare" image="icon" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="SbU-Wd-ISa">
+                                <rect key="frame" x="234" y="26" width="196" height="56"/>
+                                <buttonCell key="cell" type="squareTextured" title="Donate" bezelStyle="texturedSquare" image="paypal" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="SbU-Wd-ISa">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="openDonateWithSender:" target="xhf-Ky-nW8" id="pGA-AS-MKP"/>
+                                </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-DV-sn9">
+                                <rect key="frame" x="152" y="150" width="147" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="TYl-6x-F2G"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Quelle" id="eIb-at-SOW">
+                                    <font key="font" metaFont="systemThin" size="33"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="fbm-DV-sn9" firstAttribute="centerX" secondItem="AhZ-C6-iGu" secondAttribute="centerX" id="3q4-ma-eQv"/>
@@ -399,13 +413,13 @@
                             <constraint firstItem="QsT-fZ-twJ" firstAttribute="top" secondItem="TwP-Sj-HwO" secondAttribute="bottom" constant="8" symbolic="YES" id="8cd-oS-tDt"/>
                             <constraint firstItem="6w1-1d-R2Y" firstAttribute="baseline" secondItem="QsT-fZ-twJ" secondAttribute="baseline" id="ABT-OA-X18"/>
                             <constraint firstItem="TwP-Sj-HwO" firstAttribute="baseline" secondItem="EHU-sS-COl" secondAttribute="baseline" id="DD8-b4-swc"/>
-                            <constraint firstItem="fbm-DV-sn9" firstAttribute="top" secondItem="AhZ-C6-iGu" secondAttribute="top" constant="20" symbolic="YES" id="OBd-AS-BSs"/>
+                            <constraint firstItem="fbm-DV-sn9" firstAttribute="top" secondItem="AhZ-C6-iGu" secondAttribute="top" constant="11" id="OBd-AS-BSs"/>
                             <constraint firstItem="6w1-1d-R2Y" firstAttribute="centerX" secondItem="EHU-sS-COl" secondAttribute="centerX" id="fUn-vj-Pvy"/>
                             <constraint firstItem="TwP-Sj-HwO" firstAttribute="firstBaseline" secondItem="EHU-sS-COl" secondAttribute="firstBaseline" id="g3g-Le-1Xf"/>
                             <constraint firstItem="EHU-sS-COl" firstAttribute="top" secondItem="AhZ-C6-iGu" secondAttribute="top" constant="68" id="gOz-en-4a8"/>
                             <constraint firstItem="6w1-1d-R2Y" firstAttribute="leading" secondItem="EHU-sS-COl" secondAttribute="leading" id="gan-dr-C2Z"/>
                             <constraint firstItem="6w1-1d-R2Y" firstAttribute="firstBaseline" secondItem="QsT-fZ-twJ" secondAttribute="firstBaseline" id="jMT-mp-ISi"/>
-                            <constraint firstItem="QsT-fZ-twJ" firstAttribute="top" secondItem="fbm-DV-sn9" secondAttribute="bottom" constant="60" id="jdS-ar-clu"/>
+                            <constraint firstItem="QsT-fZ-twJ" firstAttribute="top" secondItem="fbm-DV-sn9" secondAttribute="bottom" constant="69" id="jdS-ar-clu"/>
                             <constraint firstAttribute="trailing" secondItem="EHU-sS-COl" secondAttribute="trailing" constant="20" symbolic="YES" id="xWN-rT-xKf"/>
                             <constraint firstItem="QsT-fZ-twJ" firstAttribute="leading" secondItem="TwP-Sj-HwO" secondAttribute="leading" id="zNF-wb-e8m"/>
                         </constraints>
@@ -1212,7 +1226,7 @@ Gw
                                     <action selector="dismissController:" target="XfG-lQ-9wD" id="agY-ai-tSw"/>
                                 </connections>
                             </button>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GU8-i8-65t" customClass="Cydia">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GU8-i8-65t">
                                 <rect key="frame" x="152" y="222" width="167" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="167" id="W3x-Gp-FDQ"/>
@@ -1267,6 +1281,7 @@ Gw
         <image name="Cydia-Package" width="384" height="384"/>
         <image name="homebrew-256x256" width="256" height="256"/>
         <image name="icon" width="982" height="994"/>
+        <image name="paypal" width="2272" height="1704"/>
         <image name="sources" width="128" height="128"/>
         <image name="ts" width="800" height="800"/>
     </resources>

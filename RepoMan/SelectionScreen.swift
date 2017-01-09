@@ -9,7 +9,8 @@
 import Foundation
 import Cocoa
 class SelectionScreen: UIViewController {
-
+    
+    var payPalURL = URL(string: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=APUAYQK284R3C&lc=US&item_name=Keaton%20Burleson&item_number=Quelle&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted")
     var segues = [1: "makePackage"]
     @IBAction func performSegue(sender: AnyObject) {
        
@@ -33,10 +34,14 @@ class SelectionScreen: UIViewController {
 
         checkForSelf()
     }
+    
     @IBAction func newDocumentAction(sender: NSMenuItem){
         NotificationCenter.default.post(NSNotification.init(name: NSNotification.Name(rawValue: "newDocument"), object:  ["tag": 1]) as Notification)
     }
 
+    @IBAction func openDonate(sender: NSButton){
+        NSWorkspace().open(payPalURL!)
+    }
     override func viewDidLoad() {
         NotificationCenter.default.addObserver(
             self,

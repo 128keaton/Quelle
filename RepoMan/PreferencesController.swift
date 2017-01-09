@@ -24,6 +24,7 @@ class Preferences: NSViewController {
         }
 
     }
+    
 
     @IBAction func browseFileSystem(sender: NSButton) {
         let openDialog = NSOpenPanel()
