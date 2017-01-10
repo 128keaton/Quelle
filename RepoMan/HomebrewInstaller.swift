@@ -16,7 +16,7 @@ class HomebrewInstaller: NSViewController {
 
     @IBOutlet var homebrewIcon: NSImageView?
     @IBOutlet var dpkgIcon: NSImageView?
-    
+
     override func viewDidLoad() {
         outputView?.string = ""
         outputView?.textColor = NSColor.green
@@ -31,7 +31,7 @@ class HomebrewInstaller: NSViewController {
                         self.installDPKG()
                     }
                 }
-              
+
             }
 
         }
@@ -39,44 +39,47 @@ class HomebrewInstaller: NSViewController {
 
     }
 
-    @IBAction func manuallyInstallDPKG(sender: NSButton){
+    @IBAction func manuallyInstallDPKG(sender: NSButton) {
         DispatchQueue.global(qos: .background).async {
             self.installDPKG()
         }
     }
     func installDPKG() {
-        closeButton?.isEnabled = false
-        let task = Process()
-        task.launchPath = "/usr/local/bin/brew"
+        if FileManager.default.fileExists(atPath: "/usr/local/bin/brew") {
 
-        task.arguments = [ "install", "dpkg"]
+            closeButton?.isEnabled = false
+            let task = Process()
+            task.launchPath = "/usr/local/bin/brew"
 
-        print("Trying to install dpkg")
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.standardError = pipe
+            task.arguments = [ "install", "dpkg"]
+
+            print("Trying to install dpkg")
+            let pipe = Pipe()
+            task.standardOutput = pipe
+            task.standardError = pipe
 
 
-        let outHandle = pipe.fileHandleForReading
-        outHandle.waitForDataInBackgroundAndNotify()
+            let outHandle = pipe.fileHandleForReading
+            outHandle.waitForDataInBackgroundAndNotify()
 
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(receivedData(notif:)), name: NSNotification.Name.NSFileHandleDataAvailable, object: outHandle)
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.addObserver(self, selector: #selector(receivedData(notif:)), name: NSNotification.Name.NSFileHandleDataAvailable, object: outHandle)
 
-        // You can also set a function to fire after the task terminates
-        task.terminationHandler = { task -> Void in
-            // Handle the task ending here
+            // You can also set a function to fire after the task terminates
+            task.terminationHandler = { task -> Void in
+                // Handle the task ending here
+            }
+
+
+
+            task.launch()
+
+            task.waitUntilExit()
+
+
+            closeButton?.isEnabled = true
+
         }
-
-
-
-        task.launch()
-
-        task.waitUntilExit()
-
-
-        closeButton?.isEnabled = true
-
     }
 
     func receivedData(notif: NSNotification) {

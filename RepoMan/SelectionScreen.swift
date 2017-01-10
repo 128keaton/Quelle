@@ -33,8 +33,26 @@ class SelectionScreen: UIViewController {
     override func viewDidAppear() {
 
         checkForSelf()
+        checkForLocalPath()
     }
-    
+    func checkForLocalPath(){
+        if UserDefaults.standard.object(forKey: "localURL") != nil{
+            print("we goot")
+            
+        }else{
+            let alert: NSAlert = NSAlert()
+            alert.messageText = "Hey !first-timer!"
+            alert.informativeText = "You should set your repo's base path!"
+            alert.alertStyle = NSAlertStyle.informational
+            alert.addButton(withTitle: "Lets do it")
+           
+            if alert.runModal() == NSAlertFirstButtonReturn{
+                self.performSegue(withIdentifier: "pref", sender: self)
+            }
+  
+        }
+        
+    }
     @IBAction func newDocumentAction(sender: NSMenuItem){
         NotificationCenter.default.post(NSNotification.init(name: NSNotification.Name(rawValue: "newDocument"), object:  ["tag": 1]) as Notification)
     }

@@ -112,7 +112,7 @@
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
-                                                <segue destination="o1y-QU-B45" kind="show" id="MXf-jW-Xwf"/>
+                                                <segue destination="o1y-QU-B45" kind="show" identifier="pref" id="MXf-jW-Xwf"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -444,6 +444,9 @@
                             <constraint firstItem="QsT-fZ-twJ" firstAttribute="leading" secondItem="TwP-Sj-HwO" secondAttribute="leading" id="zNF-wb-e8m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="veB-bs-lSb" kind="modal" identifier="pref" id="sZO-kg-moa"/>
+                    </connections>
                 </viewController>
                 <customObject id="S3B-2I-nPt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1265,4 +1268,7 @@ Gw
         <image name="sources" width="128" height="128"/>
         <image name="ts" width="800" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sZO-kg-moa"/>
+    </inferredMetricsTieBreakers>
 </document>

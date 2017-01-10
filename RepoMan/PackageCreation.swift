@@ -19,16 +19,24 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let _ = dpkgExists()
+     
         destinationView.delegate = self
 
 
     }
     override func viewDidAppear() {
         self.view.window!.title = "Create a package"
+        if !dpkgExists() {
+            let _ = displayError(title: "Whoops!", text: "dpkg is not installed.")
+            self.createButton?.isEnabled = false
+        }
     }
 
     func dpkgExists() -> Bool {
+        if !FileManager.default.fileExists(atPath: "/usr/local/bin/dpkg") {
+
+            return false
+        }
 
         let task = Process()
         task.launchPath = "/usr/local/bin/dpkg"
@@ -59,8 +67,11 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
     func process(path: String) {
         self.packageURL = URL(string: path)
         self.packagePath = path
-        folderTitleButton?.isEnabled = true
-        createButton?.isEnabled = true
+        if dpkgExists(){
+            folderTitleButton?.isEnabled = true
+            createButton?.isEnabled = true
+        }
+ 
     }
     @IBAction func initiatePackageCreation(sender: NSButton) {
         var packageTitle: String? = nil
@@ -78,8 +89,8 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
     @IBAction func useFolderTitle(sender: NSButton) {
         nameField?.stringValue = self.packageURL.lastPathComponent
     }
-    
-    @IBAction func dismiss(sender: NSButton){
+
+    @IBAction func dismiss(sender: NSButton) {
         self.dismiss(self)
     }
     func createPackage(folder: String, name: String) {
@@ -120,7 +131,7 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
 
 
         var outputFolder = ""
-        if let localPath = UserDefaults.standard.object(forKey: "localDeb"){
+        if let localPath = UserDefaults.standard.object(forKey: "localDeb") {
             outputFolder = (localPath as! String).replacingOccurrences(of: "file://", with: "")
             print(outputFolder)
         }
@@ -139,7 +150,7 @@ class PackageCreation: UIViewController, DestinationViewDelegate {
 
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-       
+
         if ((output?.range(of: "building package")) == nil) {
             let _ = displayError(title: "Failed to create package", text: output! as String)
             print(output ?? "??")

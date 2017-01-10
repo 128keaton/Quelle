@@ -17,7 +17,6 @@ func displayError(title: String, text: String) -> Bool {
     alert.informativeText = text
     alert.alertStyle = NSAlertStyle.critical
     alert.addButton(withTitle: "OK")
-    alert.addButton(withTitle: "Cancel")
     return alert.runModal() == NSAlertFirstButtonReturn
 }
 
